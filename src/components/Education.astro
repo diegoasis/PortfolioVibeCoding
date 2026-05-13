@@ -1,21 +1,21 @@
 ---
 const education = [
   {
-    institution: 'Universidad Pontificia de Comillas',
-    degree: 'Grado en Ingeniería en Tecnologías Industriales',
-    period: '2014 - 2018',
+    institution: 'Eastern Kentucky University',
+    degree: 'Bachelor of Science in Computer Science',
+    period: '2013 - 2017',
   },
   {
-    institution: 'University of Nevada, Las Vegas (UNLV)',
-    degree: 'NCAA Division I - Athletics (Swimming)',
-    period: '2015 - 2017',
+    institution: 'Upgrade Hub',
+    degree: 'Bootcamp Data Analytics & AI',
+    period: '2026',
   },
 ];
 
 const leadership = [
-  'Capitán del equipo de natación NCAA Division I',
-  'Representación internacional en competencias universitarias',
-  'Desarrollo de mentalidad de alto rendimiento y disciplina',
+  'Capitán del equipo de tenis NCAA Division I',
+  'Campeón de la 2015 Ohio Valley Conference',
+  'National College Athlete Honor Society - EKU 2016',
 ];
 ---
 
@@ -23,7 +23,7 @@ const leadership = [
   <div class="max-w-6xl mx-auto">
     <div class="grid lg:grid-cols-2 gap-16">
       <div>
-        <p class="text-sm text-secondary mb-4">Education</p>
+        <p class="text-sm text-secondary mb-4">Formación</p>
         <h2 class="text-3xl md:text-4xl font-medium text-primary mb-8">Formación académica</h2>
 
         <div class="space-y-8">
@@ -38,7 +38,7 @@ const leadership = [
       </div>
 
       <div>
-        <p class="text-sm text-secondary mb-4">Leadership</p>
+        <p class="text-sm text-secondary mb-4">Liderazgo y valores</p>
         <h2 class="text-3xl md:text-4xl font-medium text-primary mb-8">Experiencia atlética</h2>
 
         <div class="bg-white p-8 rounded-lg">
@@ -49,7 +49,7 @@ const leadership = [
           <ul class="space-y-4">
             {leadership.map(item => (
               <li class="flex items-start gap-3 text-sm text-primary">
-                <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                <span class="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></span>
                 {item}
               </li>
             ))}

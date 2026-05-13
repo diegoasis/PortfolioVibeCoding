@@ -23,15 +23,15 @@ const projects = [
 
 <section id="work" class="py-24 px-6 bg-white">
   <div class="max-w-6xl mx-auto">
-    <p class="text-sm text-secondary mb-4">Selected Work</p>
+    <p class="text-sm text-secondary mb-4">Proyectos</p>
     <h2 class="text-3xl md:text-4xl font-medium text-primary mb-16">Proyectos estratégicos</h2>
 
     <div class="grid md:grid-cols-2 gap-12">
       {projects.map((project, index) => (
-        <article class="group">
-          <div class="border-t border-gray-200 pt-6">
+        <article>
+          <div class="border-t-2 border-accent/30 pt-6">
             <p class="text-xs text-secondary uppercase tracking-wider mb-3">Proyecto {index + 1}</p>
-            <h3 class="text-xl md:text-2xl font-medium text-primary mb-4 group-hover:text-secondary transition-colors">
+            <h3 class="text-xl md:text-2xl font-medium text-primary mb-4">
               {project.title}
             </h3>
 
@@ -58,7 +58,7 @@ const projects = [
               <span class="text-xs text-secondary">{project.scale}</span>
             </div>
 
-            <p class="text-xs text-secondary border border-gray-200 rounded px-3 py-2 inline-block">
+            <p class="text-xs text-accent border border-accent/30 bg-accent/5 rounded px-3 py-2 inline-block">
               {project.tech}
             </p>
           </div>

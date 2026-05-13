@@ -1,9 +1,8 @@
 ---
 const navItems = [
-  { label: 'Work', href: '#work' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Proyectos', href: '#work' },
+  { label: 'Experiencia', href: '#experience' },
+  { label: 'Sobre mí', href: '#about' },
 ];
 ---
 
@@ -17,7 +16,7 @@ const navItems = [
       {navItems.map(item => (
         <a
           href={item.href}
-          class="text-sm text-secondary hover:text-primary transition-colors"
+          class="text-sm text-secondary hover:text-accent transition-colors"
         >
           {item.label}
         </a>

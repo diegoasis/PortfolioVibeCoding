@@ -2,32 +2,32 @@
 const skillCategories = [
   {
     title: 'Salesforce',
-    skills: ['Sales Cloud', 'Service Cloud', 'Lightning', 'Apex', 'CPQ', 'Marketing Cloud'],
+    skills: ['Sales Cloud', 'Lightning', 'Apex', 'Aforza', 'GreatVines'],
   },
   {
-    title: 'Product & Strategy',
-    skills: ['Product Ownership', 'CRM Strategy', 'Roadmap Planning', 'Stakeholder Management', 'Agile/Scrum'],
+    title: 'Producto y Estrategia',
+    skills: ['Product Ownership', 'Estrategia CRM', 'Roadmap Planning', 'Gestión de Stakeholders', 'Agile/Scrum'],
   },
   {
-    title: 'Technical',
-    skills: ['REST APIs', 'Integration', 'Salesforce DX', 'Version Control', 'Jira'],
+    title: 'Técnico',
+    skills: ['REST APIs', 'Integración', 'Salesforce DX', 'Control de Versiones', 'Jira'],
   },
   {
-    title: 'Leadership',
-    skills: ['Cross-functional Teams', 'International Teams', 'Release Management', 'Governance', 'Adoption'],
+    title: 'Liderazgo',
+    skills: ['Equipos Multidisciplinarios', 'Equipos Internacionales', 'Gestión de Releases', 'Governance', 'Adopción'],
   },
 ];
 ---
 
 <section id="skills" class="py-24 px-6 bg-white">
   <div class="max-w-6xl mx-auto">
-    <p class="text-sm text-secondary mb-4">Skills</p>
+    <p class="text-sm text-secondary mb-4">Habilidades</p>
     <h2 class="text-3xl md:text-4xl font-medium text-primary mb-16">Competencias</h2>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {skillCategories.map(category => (
         <div>
-          <h3 class="text-sm font-medium text-primary mb-4 pb-2 border-b border-gray-200">
+          <h3 class="text-sm font-medium text-primary mb-4 pb-2 border-b-2 border-accent/30">
             {category.title}
           </h3>
           <ul class="space-y-2">
