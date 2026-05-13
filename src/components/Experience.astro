@@ -1,0 +1,66 @@
+---
+const experiences = [
+  {
+    company: 'Suntory Beverage & Food Spain',
+    role: 'Salesforce Product Owner',
+    period: '2022 - Actualidad',
+    highlights: [
+      'Liderazgo del roadmap Salesforce internacional para mercados europeos y americanos.',
+      'Alineación entre negocio, marketing y tecnología en entornos multinacionales.',
+      'Governance y release management de la plataforma CRM.',
+    ],
+  },
+  {
+    company: 'Deloitte',
+    role: 'Salesforce Consultant',
+    period: '2020 - 2022',
+    highlights: [
+      'Implementación de soluciones Salesforce para clientes enterprise.',
+      'Coordinación de equipos multifuncionales en proyectos de transformación digital.',
+      'Diseño de arquitecturas CRM escalables.',
+    ],
+  },
+  {
+    company: 'Accenture',
+    role: 'Technical Salesforce Developer',
+    period: '2018 - 2020',
+    highlights: [
+      'Desarrollo y personalización de soluciones Salesforce.',
+      'Integración con sistemas legacy mediante APIs REST.',
+      'Implementación de Service Cloud y Lightning components.',
+    ],
+  },
+];
+---
+
+<section id="experience" class="py-24 px-6 bg-subtle">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-sm text-secondary mb-4">Experience</p>
+    <h2 class="text-3xl md:text-4xl font-medium text-primary mb-16">Trayectoria profesional</h2>
+
+    <div class="space-y-12">
+      {experiences.map((exp, index) => (
+        <div class="grid md:grid-cols-4 gap-6 border-b border-gray-200 pb-12 last:border-0">
+          <div class="md:col-span-1">
+            <p class="text-xs text-secondary uppercase tracking-wider">{exp.period}</p>
+          </div>
+          <div class="md:col-span-3">
+            <h3 class="text-xl font-medium text-primary mb-1">{exp.role}</h3>
+            <p class="text-secondary mb-4">{exp.company}</p>
+            <ul class="space-y-2">
+              {exp.highlights.map(highlight => (
+                <li class="text-sm text-primary flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+            <button class="text-sm text-secondary hover:text-primary transition-colors mt-4 flex items-center gap-1">
+              Ver más →
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

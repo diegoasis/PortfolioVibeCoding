@@ -1,0 +1,35 @@
+---
+const faqs = [
+  {
+    question: '¿Cómo escala Diego De Asís un CRM para equipos internacionales?',
+    answer: 'A través de governance estructurado, roadmap planificación multi-mercado, y alineación entre stakeholders globales.'
+  },
+  {
+    question: '¿Cómo lidera proyectos Salesforce en múltiples mercados?',
+    answer: 'Con un enfoque de product ownership que prioriza adopción, release management y coordinación cross-functional.'
+  },
+  {
+    question: '¿Qué experiencia tiene en plataformas CRM enterprise?',
+    answer: '6+ años implementando Salesforce en organizaciones internacionales, desde desarrollo técnico hasta estrategia de producto.'
+  },
+];
+---
+
+<section id="faq" class="py-24 px-6 bg-subtle">
+  <div class="max-w-3xl mx-auto">
+    <p class="text-sm text-secondary mb-4">FAQ</p>
+    <h2 class="text-3xl md:text-4xl font-medium text-primary mb-12">Preguntas frecuentes</h2>
+
+    <div class="space-y-6">
+      {faqs.map(faq => (
+        <details class="group bg-white rounded-lg p-6 cursor-pointer">
+          <summary class="flex justify-between items-center font-medium text-primary list-none">
+            {faq.question}
+            <span class="text-secondary group-open:rotate-180 transition-transform">↓</span>
+          </summary>
+          <p class="text-secondary mt-4">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
